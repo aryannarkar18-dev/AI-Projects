@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Georgia", serif;
+}
+
+body {
+  @apply font-sans text-gray-900 bg-stone-50; /* Light stone background */
+}
+
+/* Headings with vintage background and heavier borders */
+h1, h2, h3 {
+  @apply bg-[#d2b48c] border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+}
+
+/* Containers/Cards with heavier borders and shadows */
+.bg-white {
+  @apply border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-[#fffaf0];
+}
